@@ -1,11 +1,18 @@
 
 
-var h1 = document.querySelector('h1');
+let inc = document.querySelector("#inc");
+let dec = document.querySelector("#dec");
+let h3 = document.querySelector("h3")
 
-h1.innerHTML = "laxman"
-h1.style.color = "orangered"
+let a = 0;
 
-h1.addEventListener("click", function(){
-  
-})
+inc.addEventListener("click", function(){
+    a++;
+    h3.innerHTML = a;
+});
+
+dec.addEventListener("click", function(){
+    a--;
+    h3.innerHTML = a;
+});
 
